@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sandbox</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>技術メモ</h1>
+        <hr>
+
+        <h2>windows全般</h2>
+        <h3>ファイル名を指定して実行（Win + r）</h3>
+<table class="table">
+<thead>
+<tr>
+    <th scope="col">コマンド</th>
+    <th scope="col">プログラム</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>calc</td>
+    <td>電卓</td>
+</tr>
+<tr>
+    <td>cmd</td>
+    <td>コマンドプロンプト</td>
+</tr>
+<tr>
+    <td>explorer</td>
+    <td>エクスプローラー</td>
+</tr>
+<tr>
+    <td>regedit</td>
+    <td>レジストリエディタ</td>
+</tr>
+<tr>
+    <td>wt</td>
+    <td>windows terminal</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+        <h3>windows terminal</h3>
+        <h4>ショートカットキー</h4>
+        <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">入力</th>
+                <th scope="col">機能</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ctrl + Shift + T</td>
+                <td>新しいタブを作成</td>
+            </tr>
+            <tr>
+                <td>Ctrl + Tab</td>
+                <td>次のタブに移動</td>
+            </tr>
+            <tr>
+                <td>Ctrl + Shift + Tab</td>
+                <td>前のタブに移動</td>
+            </tr>
+            <tr>
+                <td>Alt + Shift + [+]</td>
+                <td>ペインを垂直に分割</td>
+            </tr>
+            <tr>
+                <td>Alt + Shift + [=]</td>
+                <td>ペインを水平に分割</td>
+            </tr>
+            <tr>
+                <td>Alt + 矢印キー</td>
+                <td>分割ペインのフォーカスを移動</td>
+            </tr>
+        </tbody>
+        </table>
+
+<br>
+        <h3>windowsにおけるvim設定</h3>
+        <h4>バイナリインストールした場合</h4>
+ユ―ザの環境変数にvim.exeのパスを追加する。<br>
+→windows terminalから実行できるようになる。<br>
+
+<br>
+        <h4>vimrc設定</h4>
+C:\Users\（ユーザ名）\_vimrcを作成、以下のテキストを記入し保存する。<br>
+<pre class="bg-light">
+"=========================================
+" Basic Vim Settings for Windows
+"=========================================
+" Enable syntax highlighting
+syntax on
+colorscheme murphy
+
+" Set line numbers
+set number
+
+" Set color
+set termguicolors
+
+" Show current line
+set cursorline
+
+" Disable creation of backup and swap files
+set nobackup
+set nowritebackup
+set noswapfile
+
+" tab key settings
+set expandtab
+set tabstop=4
+</pre>
+
+        <hr>
+        <h2>linux全般</h2>
+・ユーザを新規追加<br>
+<pre>$ useradd -m [ユーザ名]</pre>
+・ユーザのパスワード変更（-fオプションで強制変更）<br>
+<pre>$ passwd [ユーザ名]</pre>
+・ユーザを既存グループに追加<br>
+<pre>$ usermod -aG [既存グループ名] [ユーザ名]</pre>
+
+
+        <hr>
+        <h2>git</h2>
+        <h4>初期設定</h4>
+新規に開発環境を準備する場合、以下コマンドを実行し、gitconfigに設定する。<br>
+<pre>
+$ git config --global user.name [任意のユーザ名]
+$ git config --global user.email [任意のメールアドレス]
+$ git config --global alias.br branch
+$ git config --global alias.st status
+$ git config --global alias.la "log --all --graph --oneline"
+</pre>
+
+
+<!--
+
+        <h2>C++</h2>
+
+        <h2>C#</h2>
+
+        <h2>HTML</h2>
+
+        <h2>markdown</h2>
+-->
+        <hr>
+    </div>
+</body>
+
+</html>
