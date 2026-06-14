@@ -13,8 +13,14 @@
         <h1>技術メモ</h1>
         <hr>
 
-        <h2>windows全般</h2>
-        <h3>ファイル名を指定して実行（Win + r）</h3>
+<h2>目次</h2>
+<a href="#section_windows">windows全般</a><br>
+<a href="#section_linux">linux全般</a><br>
+<a href="#section_git">git</a><br>
+
+<hr>
+<h2 id="section_windows">windows全般</h2>
+<h3>ファイル名を指定して実行（Win + r）</h3>
 <table class="table">
 <thead>
 <tr>
@@ -120,8 +126,8 @@ set expandtab
 set tabstop=4
 </pre>
 
-        <hr>
-        <h2>linux全般</h2>
+<hr>
+<h2 id="section_linux">linux全般</h2>
 ・ユーザを新規追加<br>
 <pre>$ useradd -m [ユーザ名]</pre>
 ・ユーザのパスワード変更（-fオプションで強制変更）<br>
@@ -130,9 +136,9 @@ set tabstop=4
 <pre>$ usermod -aG [既存グループ名] [ユーザ名]</pre>
 
 
-        <hr>
-        <h2>git</h2>
-        <h4>初期設定</h4>
+<hr>
+<h2 id="section_git">git</h2>
+<h4>初期設定</h4>
 新規に開発環境を準備する場合、以下コマンドを実行し、gitconfigに設定する。<br>
 <pre>
 $ git config --global user.name [任意のユーザ名]
