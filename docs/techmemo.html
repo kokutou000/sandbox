@@ -128,13 +128,24 @@ set tabstop=4
 
 <hr>
 <h2 id="section_linux">linux全般</h2>
+・コマンドマニュアル<br>
+<pre>$ man [コマンド]</pre>
 ・ユーザを新規追加<br>
 <pre>$ useradd -m [ユーザ名]</pre>
 ・ユーザのパスワード変更（-fオプションで強制変更）<br>
 <pre>$ passwd [ユーザ名]</pre>
 ・ユーザを既存グループに追加<br>
 <pre>$ usermod -aG [既存グループ名] [ユーザ名]</pre>
-
+・現在の実行中コマンド一覧を表示<br>
+<pre>$ jobs</pre>
+・対象のジョブをフォアグラウンドにする<br>
+<pre>$ fg %[ジョブID]</pre>
+・vimをサスペンドしてターミナルに戻る<br>
+<pre>（vimコマンド上で）Ctrl + z</pre>
+・日付をYYYYMMDD形式で取得
+<pre>$ date +"%Y%m%d"</pre>
+・日付をYYYYMMDDHHMMSS形式で取得
+<pre>$ date +"%Y%m%d%H%M%S"</pre>
 
 <hr>
 <h2 id="section_git">git</h2>
